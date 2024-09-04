@@ -14,7 +14,7 @@ else:
     wb.save(file_path)  # 新しいファイルを保存
 xw.Range("A1").value="時刻"
 xw.Range("B1").value="名前"
-xw.Range("C1").value="名前"
+xw.Range("C1").value="質問"
 xw.Range("A2").value=""
 xw.Range("B2").value=""
 xw.Range("C2").value=""
@@ -44,7 +44,7 @@ def form():
 if __name__=="__main__":
     try:
         # app.run(port=int("5000"),debug=True,host="localhost")
-        app.run(host="0.0.0.0")
+        app.run(host="0.0.0.0", port=5000)
     finally:
         wb.save()
         wb.close()
