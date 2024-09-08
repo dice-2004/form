@@ -1,2 +1,2 @@
 # form to excel app
-use 
+It uses xlwings, so it cannot be used on Ubuntu or other Linux systems.
